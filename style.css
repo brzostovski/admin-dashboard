@@ -48,6 +48,11 @@ body > * {
   box-shadow: 8px 8px 8px var(--shadow-color);
 }
 
+.sidebar a {
+  color: var(--font-main-color);
+  text-decoration: none;
+}
+
 .main {
   grid-area: main;
 
