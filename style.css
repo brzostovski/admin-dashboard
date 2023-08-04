@@ -24,9 +24,6 @@ body {
   background-color: var(--bg-main-color);
   color: var(--font-main-color);
 
-  border: 1px dashed white;
-  border-radius: 12px;
-
   display: grid;
   grid-template: 1fr 5fr / 1fr 4fr;
   grid-template-areas:
