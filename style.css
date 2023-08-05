@@ -98,10 +98,7 @@ main {
   box-shadow: inset 8px 8px 8px var(--shadow-color);
 
   display: grid;
-  grid-template: 1fr 1fr / 5fr 2fr;
-  grid-template-areas:
-    'projects announce'
-    'projects trending';
+  grid-template: 1fr / 5fr 2fr;
   gap: 20px;
 }
 
@@ -114,7 +111,7 @@ h2.section-title {
 }
 
 .projects-section {
-  grid-area: projects;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .projects-container {
@@ -146,6 +143,14 @@ h2.section-title {
   scale: 1;
 
   background-color: var(--card-active);
+}
+
+.right-sidebar {
+  grid-area: 1 / 2 / 2 / 3;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .announce-section {
@@ -184,4 +189,27 @@ h2.section-title {
 
 .trending-section {
   grid-area: trending;
+}
+
+.trending-container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--bg-secondary-color);
+
+  box-shadow: 4px 4px 4px var(--card-shadow-color);
+
+  border-radius: 10px;
+}
+
+.trending-container > .card {
+  display: flex;
+  gap: 10px;
+
+  padding: 10px;
+}
+
+.trending-container > .card > img {
+  height: 40px;
+  aspect-ratio: 1;
 }
