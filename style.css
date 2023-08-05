@@ -55,11 +55,14 @@ header {
   display: grid;
   grid-template: 1fr 1fr / 2fr 1fr;
   gap: 20px;
+
+  padding-inline: 40px;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .search-bar input {
@@ -68,10 +71,12 @@ header {
 
   padding: 10px;
 
+  background-color: var(--card-active);
+
   border: none;
   border-radius: 15px;
 
-  box-shadow: 4px 4px 4px var(--card-shadow-color);
+  box-shadow: 2px 2px 4px var(--card-shadow-color);
 }
 
 header > .user-section {
@@ -83,6 +88,7 @@ header > .user-section {
 header > .welcome-section {
   display: flex;
   align-items: center;
+  gap: 50px;
 }
 
 .user-name::after {
@@ -109,7 +115,6 @@ header button {
   font-weight: bold;
 
   border-radius: 100px;
-  box-shadow: 4px 4px 4px var(--card-shadow-color);
 
   transition-duration: 0.1s;
 }
@@ -117,6 +122,7 @@ header button {
 header button:hover {
   cursor: pointer;
   scale: 1.05;
+  box-shadow: 2px 2px 4px var(--card-shadow-color);
 }
 
 header button:active {
@@ -143,6 +149,10 @@ aside {
   align-items: center;
 
   margin: 10px 0;
+}
+
+.sidebar-header {
+  font-size: 16px;
 }
 
 .sidebar-card > h2 {
