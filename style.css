@@ -78,12 +78,12 @@ aside .icon {
 }
 
 #sidebar-logo {
-  width: 30px;
+  width: 60px;
   aspect-ratio: 1;
 }
 
 aside .icon {
-  width: 20px;
+  width: 30px;
   aspect-ratio: 1;
 }
 
@@ -204,6 +204,8 @@ h2.section-title {
 
 .trending-container > .card {
   display: flex;
+  justify-content: left;
+  align-items: center;
   gap: 10px;
 
   padding: 10px;
