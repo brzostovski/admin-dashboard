@@ -2,12 +2,15 @@
   /* COLORS */
   /* Main */
   --bg-main-color: rgb(69, 69, 69);
+  --bg-secondary-color: darkolivegreen;
   --font-main-color: white;
+  --font-secondary-color: lightgray;
   --card-bg-color: rgb(100, 100, 100);
+  --card-active: rgb(120, 120, 120);
   /* Header */
   --head-bg-color: rgba(255, 255, 255, 0.05);
   /* Sidebar */
-  --sidebar-bg-color: darkolivegreen;
+
   /* Shadow */
   --shadow-color: rgba(0, 0, 0, 0.2);
   --card-shadow-color: rgba(0, 0, 0, 0.4);
@@ -39,25 +42,21 @@ body > * {
   padding: 20px;
 }
 
-.header {
+header {
   grid-area: header;
 
   background-color: var(--head-bg-color);
 }
 
-.sidebar {
+aside {
   grid-area: sidebar;
 
-  background-color: var(--sidebar-bg-color);
+  background-color: var(--bg-secondary-color);
   box-shadow: 8px 8px 8px var(--shadow-color);
 
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.card-title {
-  margin-bottom: 10px;
 }
 
 .sidebar-header,
@@ -74,7 +73,7 @@ body > * {
 }
 
 #sidebar-logo,
-.sidebar .icon {
+aside .icon {
   margin-right: 20px;
 }
 
@@ -83,17 +82,17 @@ body > * {
   aspect-ratio: 1;
 }
 
-.sidebar .icon {
+aside .icon {
   width: 20px;
   aspect-ratio: 1;
 }
 
-.sidebar a {
+aside a {
   color: var(--font-main-color);
   text-decoration: none;
 }
 
-.main {
+main {
   grid-area: main;
 
   box-shadow: inset 8px 8px 8px var(--shadow-color);
@@ -104,6 +103,14 @@ body > * {
     'projects announce'
     'projects trending';
   gap: 20px;
+}
+
+h2.section-title {
+  margin-bottom: 10px;
+}
+
+.card-title {
+  margin-bottom: 10px;
 }
 
 .projects-section {
@@ -135,14 +142,46 @@ body > * {
   scale: 1.02;
 }
 
+.projects-container > .card:active {
+  scale: 1;
+
+  background-color: var(--card-active);
+}
+
 .announce-section {
   grid-area: announce;
 }
 
-.trending-section {
-  grid-area: trending;
+.announces-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+
+  background-color: var(--bg-secondary-color);
+
+  box-shadow: 4px 4px 4px var(--card-shadow-color);
+
+  border-radius: 10px;
 }
 
-h2.section-title {
-  margin-bottom: 10px;
+.announces-container > .card {
+  padding: 10px;
+
+  border-top: 1px dashed var(--font-secondary-color);
+  border-bottom: 1px dashed var(--font-secondary-color);
+}
+
+.announces-container > .card:first-child {
+  padding-top: none;
+  border: none;
+}
+
+.announces-container > .card:last-child {
+  padding-bottom: none;
+  border: none;
+}
+
+.trending-section {
+  grid-area: trending;
 }
