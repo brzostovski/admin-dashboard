@@ -49,6 +49,28 @@ header {
   grid-area: header;
 
   background-color: var(--head-bg-color);
+
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+  gap: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 100%;
+}
+
+header > .welcome-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-name::after {
+  content: 'John Snow';
 }
 
 aside {
