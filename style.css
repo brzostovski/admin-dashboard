@@ -3,6 +3,7 @@
   /* Main */
   --bg-main-color: rgb(69, 69, 69);
   --font-main-color: white;
+  --card-bg-color: rgb(100, 100, 100);
   /* Header */
   --head-bg-color: rgba(255, 255, 255, 0.05);
   /* Sidebar */
@@ -54,18 +55,26 @@ body > * {
   gap: 30px;
 }
 
+.card-title {
+  margin-bottom: 10px;
+}
+
 .sidebar-header,
 .sidebar-card {
   display: flex;
   justify-content: left;
   align-items: center;
 
-  margin: 5px 0;
+  margin: 10px 0;
+}
+
+.sidebar-card > h2 {
+  font-weight: normal;
 }
 
 #sidebar-logo,
 .sidebar .icon {
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 #sidebar-logo {
@@ -87,4 +96,52 @@ body > * {
   grid-area: main;
 
   box-shadow: inset 8px 8px 8px var(--shadow-color);
+
+  display: grid;
+  grid-template: 1fr 1fr / 5fr 2fr;
+  grid-template-areas:
+    'projects announce'
+    'projects trending';
+  gap: 20px;
+}
+
+.projects-section {
+  grid-area: projects;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.projects-container > .card {
+  transition-duration: 0.1s;
+
+  padding: 15px;
+
+  background-color: var(--card-bg-color);
+
+  box-shadow: 4px 4px 4px var(--shadow-color);
+
+  border-left: solid 6px yellowgreen;
+  border-radius: 10px;
+}
+
+.projects-container > .card:hover {
+  cursor: pointer;
+
+  scale: 1.02;
+}
+
+.announce-section {
+  grid-area: announce;
+}
+
+.trending-section {
+  grid-area: trending;
+}
+
+h2.section-title {
+  margin-bottom: 10px;
 }
