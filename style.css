@@ -267,7 +267,7 @@ h2.section-title {
   background-color: var(--card-active);
 }
 
-.projects-container > .card > .button-container {
+.projects-container .card .button-container {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -276,9 +276,26 @@ h2.section-title {
   gap: 20px;
 }
 
-.button-container img {
+.button-container > a {
   width: 30px;
   aspect-ratio: 1;
+}
+
+.button-container > .star {
+  background-image: url(./icons/post/star.png);
+}
+
+.button-container > .eye {
+  background-image: url(./icons/post/eye.png);
+}
+
+.button-container > .fork {
+  background-image: url(./icons/post/fork.png);
+}
+
+.button-container > .icon {
+  background-size: 30px 30px;
+  background-position: center;
 }
 
 .right-sidebar {
