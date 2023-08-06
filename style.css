@@ -47,10 +47,6 @@ body > * {
   padding: 20px;
 }
 
-img {
-  filter: drop-shadow(0 0 4px black);
-}
-
 .icon {
   filter: invert(100%);
 }
@@ -60,6 +56,8 @@ img.profile-pic {
   aspect-ratio: 1;
 
   border-radius: 50%;
+
+  filter: drop-shadow(0 0 4px black);
 }
 
 header {
