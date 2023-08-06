@@ -109,6 +109,19 @@ header .icon {
   aspect-ratio: 1;
 }
 
+header .icon.bell {
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+header .icon.bell:hover {
+  transform: scale(1.5) rotate(-20deg);
+}
+
+header .icon.bell:active {
+  transform: scale(1.3) rotate(15deg);
+}
+
 header .search {
   width: 30px;
   aspect-ratio: 1;
