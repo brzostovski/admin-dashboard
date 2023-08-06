@@ -55,10 +55,10 @@ img.profile-pic {
   width: 30px;
   aspect-ratio: 1;
 
-  outline: solid 2px var(--accent-color);
+  outline: solid 2px white;
   outline-offset: 2px;
 
-  border-radius: 20%;
+  border-radius: 50%;
 }
 
 header {
