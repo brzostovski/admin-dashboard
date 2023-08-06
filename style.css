@@ -288,20 +288,27 @@ h2.section-title {
 }
 
 .button-container > .star {
-  background-image: url(./icons/post/star.png);
+  background-image: url(./icons/post/star.svg);
+  filter: invert(100%);
 }
 
 .button-container > .eye {
-  background-image: url(./icons/post/eye.png);
+  background-image: url(./icons/post/eye.svg);
+  filter: invert(100%);
 }
 
 .button-container > .fork {
-  background-image: url(./icons/post/fork.png);
+  background-image: url(./icons/post/fork.svg);
+  filter: invert(100%);
 }
 
 .button-container > .icon {
   background-size: 30px 30px;
   background-position: center;
+}
+
+.button-container > .icon:active {
+  filter: invert(100%);
 }
 
 .right-sidebar {
