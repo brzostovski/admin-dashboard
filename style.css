@@ -203,6 +203,14 @@ aside a {
   text-decoration: none;
 }
 
+aside a.resources-credits {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  text-decoration: underline;
+}
+
 main {
   grid-area: main;
 
