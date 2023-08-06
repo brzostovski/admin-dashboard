@@ -51,7 +51,14 @@ img {
   filter: drop-shadow(0 0 4px black);
 }
 
+.icon {
+  filter: invert(100%);
+}
+
 img.profile-pic {
+  width: 40px;
+  aspect-ratio: 1;
+
   border-radius: 50%;
 }
 
@@ -94,18 +101,18 @@ header .user-section {
   gap: 20px;
 }
 
-header img {
-  width: 40px;
-  aspect-ratio: 1;
-}
-
 header img#main-pic {
   width: 60px;
   aspect-ratio: 1;
 }
 
-header img.icon {
+header .icon {
   width: 20px;
+  aspect-ratio: 1;
+}
+
+header .search {
+  width: 30px;
   aspect-ratio: 1;
 }
 
@@ -177,6 +184,7 @@ aside {
   display: flex;
   justify-content: left;
   align-items: center;
+  gap: 10px;
 
   margin: 10px 0;
 }
@@ -187,11 +195,6 @@ aside {
 
 .sidebar-card > h2 {
   font-weight: normal;
-}
-
-#sidebar-logo,
-aside .icon {
-  margin-right: 20px;
 }
 
 #sidebar-logo {
@@ -289,26 +292,19 @@ h2.section-title {
 
 .button-container > .star {
   background-image: url(./icons/post/star.svg);
-  filter: invert(100%);
 }
 
 .button-container > .eye {
   background-image: url(./icons/post/eye.svg);
-  filter: invert(100%);
 }
 
 .button-container > .fork {
   background-image: url(./icons/post/fork.svg);
-  filter: invert(100%);
 }
 
 .button-container > .icon {
   background-size: 30px 30px;
   background-position: center;
-}
-
-.button-container > .icon:active {
-  filter: invert(100%);
 }
 
 .right-sidebar {
@@ -375,9 +371,4 @@ h2.section-title {
   gap: 10px;
 
   padding: 10px;
-}
-
-.trending-container > .card > img {
-  height: 40px;
-  aspect-ratio: 1;
 }
