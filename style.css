@@ -51,6 +51,10 @@ img {
   filter: drop-shadow(0 0 4px black);
 }
 
+img.profile-pic {
+  border-radius: 50%;
+}
+
 header {
   grid-area: header;
 
@@ -107,7 +111,7 @@ header img.icon {
 
 header .welcome-section {
   margin-left: 30px;
-  
+
   display: flex;
   align-items: center;
   gap: 20px;
