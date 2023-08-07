@@ -10,7 +10,7 @@
   --card-active: rgb(120, 120, 120);
   --secondary-active: olive;
   /* Header */
-  --head-bg-color: rgba(255, 255, 255, 0.05);
+  --head-bg-color: rgba(80, 80, 80);
   /* Sidebar */
 
   /* Shadow */
@@ -31,7 +31,9 @@
 }
 
 body {
-  height: 100dvh;
+  position: relative;
+
+  min-height: 100dvh;
 
   background-color: var(--bg-main-color);
   color: var(--font-main-color);
@@ -62,9 +64,14 @@ img.profile-pic {
 }
 
 header {
+  position: sticky;
+  top: 0;
+
   grid-area: header;
+  z-index: 1;
 
   background-color: var(--head-bg-color);
+  box-shadow: 8px 8px 8px var(--shadow-color);
 
   display: grid;
   grid-template: 1fr 1fr / 2fr 1fr;
@@ -183,7 +190,13 @@ header button:active {
 }
 
 aside {
+  height: 100dvh;
+  position: sticky;
+  top: 0;
+
   grid-area: sidebar;
+  align-self: start;
+  z-index: 2;
 
   background-color: var(--bg-secondary-color);
   box-shadow: 8px 8px 8px var(--shadow-color);
@@ -236,8 +249,6 @@ aside a.resources-credits {
 
 main {
   grid-area: main;
-
-  box-shadow: inset 8px 8px 8px var(--shadow-color);
 
   display: grid;
   grid-template: 1fr / 3fr 1fr;
