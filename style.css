@@ -353,6 +353,21 @@ h2.section-title {
 
   background-size: 30px 30px;
   background-position: center;
+
+  transition-duration: var(--quick-duration);
+}
+
+.button-container > a:hover {
+  filter: invert(100%) brightness(0.7);
+}
+
+.button-container > a:active {
+  filter: invert(100%) brightness(0.7);
+  transform: scale(0.9);
+}
+
+.button-container > a:visited { /* TO-DO: Do it in javascript */
+  background-color: blue;
 }
 
 .button-container > .star {
