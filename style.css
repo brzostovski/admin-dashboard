@@ -9,6 +9,7 @@
   --card-bg-color: rgb(100, 100, 100);
   --card-active: rgb(120, 120, 120);
   --secondary-active: olivedrab;
+  --svg-filter-yellowgreen: invert(96%) sepia(13%) saturate(2430%) hue-rotate(21deg) brightness(83%) contrast(91%);
   /* Header */
   --head-bg-color: rgba(80, 80, 80);
   /* Sidebar */
@@ -370,7 +371,7 @@ h2.section-title {
 }
 
 .button-container > div.icon.active {
-  filter: invert(96%) sepia(13%) saturate(2430%) hue-rotate(21deg) brightness(83%) contrast(91%);
+  filter: var(--svg-filter-yellowgreen);
 }
 
 .button-container > .star {
