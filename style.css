@@ -393,7 +393,7 @@ h2.section-title {
 
 .right-sidebar .announces-container .content:active,
 .right-sidebar .trending-container .card:active {
-  transform: scale(0.9);
+  transform: scale(0.96);
   background-color: var(--secondary-active);
 }
 
