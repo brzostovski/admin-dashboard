@@ -222,6 +222,16 @@ aside {
   gap: 10px;
 
   margin: 10px 0;
+
+  transition-duration: 0.2s;
+}
+
+.sidebar-card:hover {
+  transform: translate(15px);
+}
+
+.sidebar-card:active {
+  transform: translate(15px) scale(0.9);
 }
 
 .sidebar-header {
