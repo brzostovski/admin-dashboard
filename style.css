@@ -347,7 +347,11 @@ h2.section-title {
   gap: 20px;
 }
 
-.button-container > a {
+.button-container > div.icon {
+  border: none;
+  background-color: none;
+  box-shadow: none;
+
   width: 30px;
   aspect-ratio: 1;
 
@@ -357,15 +361,15 @@ h2.section-title {
   transition-duration: var(--quick-duration);
 }
 
-.button-container > a:hover {
+.button-container > div.icon:hover {
   transform: scale(1.1);
 }
 
-.button-container > a:active {
+.button-container > div.icon:active {
   transform: scale(1);
 }
 
-.button-container > a.active {
+.button-container > div.icon.active {
   filter: invert(96%) sepia(13%) saturate(2430%) hue-rotate(21deg) brightness(83%) contrast(91%);
 }
 
