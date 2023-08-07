@@ -366,10 +366,6 @@ h2.section-title {
   transform: scale(0.9);
 }
 
-.button-container > a:visited { /* TO-DO: Do it in javascript */
-  background-color: blue;
-}
-
 .button-container > .star {
   background-image: url(./icons/post/star.svg);
 }
