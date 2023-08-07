@@ -1,9 +1,9 @@
 const ICON = document.querySelectorAll('a.icon');
 
-function changeColor(item) {
-  console.log('click');
+function changeState(item) {
+  item.classList.toggle('active');
 }
 
 ICON.forEach(cardIcon => {
-  cardIcon.addEventListener('click', () => changeColor(cardIcon));
+  cardIcon.addEventListener('click', () => changeState(cardIcon));
 })
