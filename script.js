@@ -1,4 +1,4 @@
-const ICON = document.querySelectorAll('a.icon');
+const ICON = document.querySelectorAll('div.icon');
 
 function changeState(item) {
   (item.classList.contains('active'))
