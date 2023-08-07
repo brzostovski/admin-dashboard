@@ -434,8 +434,6 @@ h2.section-title {
 }
 
 .announces-container > .card {
-  padding: 10px;
-
   border-top: 1px dashed var(--font-secondary-color);
   border-bottom: 1px dashed var(--font-secondary-color);
 }
@@ -450,7 +448,13 @@ h2.section-title {
   border: none;
 }
 
+.announces-container .card-title {
+  margin: 10px 10px 0 10px;
+}
+
 .announces-container .content {
+  padding: 10px;
+
   border-radius: 10px;
 }
 
