@@ -362,8 +362,11 @@ h2.section-title {
 }
 
 .button-container > a:active {
-  filter: invert(100%) brightness(0.7);
   transform: scale(0.9);
+}
+
+.button-container > a.active {
+  filter: invert(96%) sepia(13%) saturate(2430%) hue-rotate(21deg) brightness(83%) contrast(91%);
 }
 
 .button-container > .star {
