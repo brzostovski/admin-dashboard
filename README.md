@@ -7,4 +7,4 @@ https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin
 
 Icons from https://pictogrammers.com/library/mdi/
 
-Profile pics credits can be found in ./credits.html
+Profile pics credits and svg color filter generator can be found in ./credits.html
