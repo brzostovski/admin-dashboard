@@ -8,7 +8,7 @@
   --font-secondary-color: lightgray;
   --card-bg-color: rgb(100, 100, 100);
   --card-active: rgb(120, 120, 120);
-  --secondary-active: olive;
+  --secondary-active: olivedrab;
   /* Header */
   --head-bg-color: rgba(80, 80, 80);
   /* Sidebar */
@@ -23,6 +23,10 @@
   /* DIMENSIONS */
   --header-height: 140px;
   --main-grid-gap: 20px;
+
+  /* DURATIONS */
+  --normal-duration: 0.2s;
+  --quick-duration: 0.1s;
 }
 
 * {
@@ -124,7 +128,7 @@ header .icon {
 
 header .icon.bell {
   cursor: pointer;
-  transition-duration: 0.2s;
+  transition-duration: var(--normal-duration);
 }
 
 header .icon.bell:hover {
@@ -138,6 +142,13 @@ header .icon.bell:active {
 header .icon.search {
   width: 30px;
   aspect-ratio: 1;
+
+  transition-duration: var(--normal-duration);
+}
+
+header .icon.search:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 header .welcome-section {
@@ -182,7 +193,7 @@ header button {
 
   border-radius: 100px;
 
-  transition-duration: 0.1s;
+  transition-duration: var(--quick-duration);
 }
 
 header button:hover {
@@ -223,7 +234,7 @@ aside {
 
   margin: 10px 0;
 
-  transition-duration: 0.2s;
+  transition-duration: var(--normal-duration);
 }
 
 .sidebar-card:hover {
@@ -296,7 +307,7 @@ h2.section-title {
 .projects-container > .card {
   position: relative;
 
-  transition-duration: 0.1s;
+  transition-duration: var(--quick-duration);
 
   padding: 15px;
   padding-bottom: 50px;
@@ -365,6 +376,23 @@ h2.section-title {
   gap: 20px;
 }
 
+.right-sidebar .announces-container .content,
+.right-sidebar .trending-container .card {
+  transition-duration: var(--normal-duration);
+}
+
+.right-sidebar .announces-container .content:hover,
+.right-sidebar .trending-container .card:hover {
+  cursor: pointer;
+  scale: 0.97;
+}
+
+.right-sidebar .announces-container .content:active,
+.right-sidebar .trending-container .card:active {
+  transform: scale(0.9);
+  background-color: var(--secondary-active);
+}
+
 .announce-section {
   grid-area: announce;
 }
@@ -399,6 +427,10 @@ h2.section-title {
   border: none;
 }
 
+.announces-container .content {
+  border-radius: 10px;
+}
+
 .trending-section {
   grid-area: trending;
 }
@@ -421,4 +453,6 @@ h2.section-title {
   gap: 10px;
 
   padding: 10px;
+
+  border-radius: 10px;
 }
