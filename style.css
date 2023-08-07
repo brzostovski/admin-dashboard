@@ -335,8 +335,6 @@ h2.section-title {
 }
 
 .projects-container > .card:active {
-  scale: 1;
-
   background-color: var(--card-active);
 }
 
