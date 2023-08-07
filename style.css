@@ -350,6 +350,9 @@ h2.section-title {
 .button-container > a {
   width: 30px;
   aspect-ratio: 1;
+
+  background-size: 30px 30px;
+  background-position: center;
 }
 
 .button-container > .star {
@@ -362,11 +365,6 @@ h2.section-title {
 
 .button-container > .fork {
   background-image: url(./icons/post/fork.svg);
-}
-
-.button-container > .icon {
-  background-size: 30px 30px;
-  background-position: center;
 }
 
 .right-sidebar {
