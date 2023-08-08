@@ -12,8 +12,6 @@
   --svg-filter-yellowgreen: invert(96%) sepia(13%) saturate(2430%) hue-rotate(21deg) brightness(83%) contrast(91%);
   /* Header */
   --head-bg-color: rgba(80, 80, 80);
-  /* Sidebar */
-
   /* Shadow */
   --shadow-color: rgba(0, 0, 0, 0.2);
   --card-shadow-color: rgba(0, 0, 0, 0.4);
@@ -22,8 +20,10 @@
   font-size: 80%;
 
   /* DIMENSIONS */
-  --header-height: 140px;
   --main-grid-gap: 20px;
+  --header-height: 140px;
+  --subpage-header-height: 55px;
+  --aside-width: 220px;
 
   /* DURATIONS */
   --normal-duration: 0.2s;
@@ -48,7 +48,15 @@ body {
   color: var(--font-main-color);
 
   display: grid;
-  grid-template: var(--header-height) 5fr / 1fr 5fr;
+  grid-template: var(--header-height) 5fr / var(--aside-width) 5fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+body.sub-page {
+  display: grid;
+  grid-template: var(--subpage-header-height) 5fr / var(--aside-width) 5fr;
   grid-template-areas:
     "sidebar header"
     "sidebar main";
@@ -89,6 +97,10 @@ header {
   gap: 0;
 
   padding: 10px 40px 10px 40px;
+}
+
+header.sub-page {
+  height: var(--subpage-header-height);
 }
 
 .search-bar {
@@ -280,13 +292,11 @@ aside a {
   text-decoration: none;
 }
 
-aside a.resources-credits {
+aside .resources-credits {
   margin-top: auto;
-
-  text-decoration: underline;
 }
 
-main {
+main.home {
   position: relative;
 
   grid-area: main;
