@@ -242,7 +242,7 @@ aside {
   overflow-y: auto;
 
   background-color: var(--bg-secondary-color);
-  box-shadow: 8px 8px 8px var(--shadow-color);
+  box-shadow: 8px 0 8px var(--shadow-color);
 
   display: flex;
   flex-direction: column;
