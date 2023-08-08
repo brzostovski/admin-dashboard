@@ -54,14 +54,6 @@ body {
     "sidebar main";
 }
 
-body.sub-page {
-  display: grid;
-  grid-template: var(--subpage-header-height) 5fr / var(--aside-width) 5fr;
-  grid-template-areas:
-    "sidebar header"
-    "sidebar main";
-}
-
 body > * {
   padding: 20px;
 }
@@ -97,10 +89,6 @@ header {
   gap: 0;
 
   padding: 10px 40px 10px 40px;
-}
-
-header.sub-page {
-  height: var(--subpage-header-height);
 }
 
 .search-bar {
@@ -483,4 +471,32 @@ h2.section-title {
   padding: 10px;
 
   border-radius: 10px;
+}
+
+/* SUB-PAGE STYLING */
+
+body.sub-page {
+  display: grid;
+  grid-template: var(--subpage-header-height) 5fr / var(--aside-width) 5fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+header.sub-page {
+  height: var(--subpage-header-height);
+}
+
+main.sub-page a {
+  color: lightgray;
+  text-decoration: underline;
+}
+
+main.sub-page a:visited {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+main.sub-page a:hover {
+  text-decoration: none;
 }
