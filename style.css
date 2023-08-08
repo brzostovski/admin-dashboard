@@ -114,7 +114,7 @@ header {
 }
 
 .search-bar input::placeholder {
-  color: var(--accent-color);
+  color: var(--font-main-color);
 }
 
 header .user-section {
