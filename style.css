@@ -226,6 +226,9 @@ aside {
   align-self: start;
   z-index: 2;
 
+  overflow-x: hidden;
+  overflow-y: auto;
+
   background-color: var(--bg-secondary-color);
   box-shadow: 8px 8px 8px var(--shadow-color);
 
