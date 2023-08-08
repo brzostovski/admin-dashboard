@@ -499,7 +499,6 @@ main.sub-page a {
 
 main.sub-page a:visited {
   color: var(--font-secondary-color);
-  text-decoration: underline;
 }
 
 main.sub-page a:hover {
