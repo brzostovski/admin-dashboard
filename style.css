@@ -278,9 +278,7 @@ aside a {
 }
 
 aside a.resources-credits {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+  margin-top: auto;
 
   text-decoration: underline;
 }
@@ -387,11 +385,6 @@ h2.section-title {
 }
 
 .right-sidebar {
-  position: sticky;
-  top: calc(var(--header-height) + var(--main-grid-gap));
-
-  align-self: start;
-
   grid-area: 1 / 2 / 2 / 3;
 
   display: flex;
