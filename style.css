@@ -488,12 +488,12 @@ header.sub-page {
 }
 
 main.sub-page a {
-  color: lightgray;
+  color: var(--accent-color);
   text-decoration: underline;
 }
 
 main.sub-page a:visited {
-  color: var(--accent-color);
+  color: lightgray;
   text-decoration: underline;
 }
 
