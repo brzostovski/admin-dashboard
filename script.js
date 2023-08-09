@@ -1,6 +1,8 @@
 const ICON = document.querySelectorAll('div.icon');
 const FULL_NAME_HEADER = document.querySelectorAll('.full-name');
 const USER_NAME_HEADER = document.querySelector('.user-name');
+const SIDE_CARD = document.querySelectorAll('.sidebar-link');
+
 const FULL_NAME = 'John Snow';
 const USER_NAME = '@jsnow';
 
@@ -19,8 +21,16 @@ ICON.forEach(cardIcon => {
 })
 
 window.addEventListener('load', () => {
-  FULL_NAME_HEADER.forEach(container => {
+  if (FULL_NAME_HEADER) {
+    FULL_NAME_HEADER.forEach(container => {
     addName(container, FULL_NAME);
   })
-  addName(USER_NAME_HEADER, `(${USER_NAME})`);
+  }
+  if (USER_NAME_HEADER) {
+    addName(USER_NAME_HEADER, `(${USER_NAME})`);
+  }
+})
+
+SIDE_CARD.forEach(card => {
+  card.addEventListener('click', () => {console.log('click')});
 })
