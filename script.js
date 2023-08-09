@@ -5,7 +5,7 @@ const FULL_NAME = 'John Snow';
 const USER_NAME = '@jsnow';
 
 function changeState(item) {
-  (item.classList.contains('active'))
+  item.classList.contains('active')
     ? item.classList.remove('active')
     : item.classList.add('active');
 }
