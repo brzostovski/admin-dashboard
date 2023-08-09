@@ -178,12 +178,9 @@ header img#main-pic {
   aspect-ratio: 1;
 }
 
-.full-name::before {
-  content: 'John Snow';
-}
-
-.user-name::after {
-  content: '@jsnow';
+.user-name-line {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .header-buttons {
